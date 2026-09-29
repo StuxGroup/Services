@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0d0d">
+  <title>Stux.Group Services</title>
+  <meta name="description" content="Every Stux.Group company, service, API and template in one place, with live status from status.stux.group.">
+  <link rel="icon" type="image/png" href="/assets/img/icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/dev-mode.js"></script>
+  <script src="https://seasonaloverlayslibrary.stuxapis.net/seasonal-overlays-library.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand">
+        <img src="/assets/img/icon.png" width="34" height="34" alt="">
+        Stux.Group <span class="brand-sub">Services</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#services">Services</a>
+        <a href="/#status">Status</a>
+        <a href="/#contact">Contact</a>
+        <a href="/legal/">Legal</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Stux.Group</span>
+      <h1>Every Stux.Group service,<br><span class="grad">in one place</span></h1>
+      <p>The companies, services, APIs and templates that make up the Stux.Group Brand of Companies &mdash; each with its own site and repository, and live status where we check it.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#services">Browse services</a>
+        <a class="btn btn-ghost" href="https://status.stux.group" target="_blank" rel="noopener">Live status</a>
+        <button type="button" class="btn btn-ghost btn-season" id="season-btn" data-overlay-preset="auto" hidden>Today's overlay</button>
+      </div>
+      <div class="hero-stats">
+        <div><strong class="grad">25</strong><span>services &amp; sites</span></div>
+        <div><strong class="grad">7</strong><span>companies</span></div>
+        <div><strong class="grad">5 min</strong><span>between status checks</span></div>
+      </div>
+      <p class="season-note">Seasonal overlays by <a href="https://seasonaloverlayslibrary.stuxapis.net" target="_blank" rel="noopener">SeasonalOverlaysLibrary</a> from StuxAPIs.</p>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Each one lives in its own repo, most with their own website &mdash; this is just the index.</p>
+      </div>
+
+      <h3 class="subhead">Featured</h3>
+      <div class="project-grid">
+
+        <article class="project-card" data-monitor="stux-group">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-group.png" width="64" height="64" alt="Stux.Group icon" loading="lazy">
+            <div>
+              <h3>Stux.Group</h3>
+              <div class="project-tagline">Innovating Today, Building Tomorrow</div>
+            </div>
+          </div>
+          <p class="desc">The parent of the Stux.Group Brand of Companies, and home to everything on this page.</p>
+          <div class="stack">
+            <span class="badge-status soon">Coming soon</span><span class="svc-status" hidden></span>
+          </div>
+          <div class="project-links">
+            <a href="https://stux.group" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxGroup" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/status.svg" width="64" height="64" alt="Status icon" loading="lazy">
+            <div>
+              <h3>Status</h3>
+              <div class="project-tagline">Is everything up?</div>
+            </div>
+          </div>
+          <p class="desc">Live status and 90-day uptime history for Stux.Group's websites and services, checked every 5 minutes.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://status.stux.group" target="_blank" rel="noopener">Status page</a>
+            <a href="https://github.com/StuxGroup/Status" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-monitor="githup">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/githup.svg" width="64" height="64" alt="GitHup icon" loading="lazy">
+            <div>
+              <h3>GitHup</h3>
+              <div class="project-tagline">Uptime monitoring, run entirely on GitHub</div>
+            </div>
+          </div>
+          <p class="desc">A free, open-source GitHub Action for uptime monitoring and status pages. It's what runs status.stux.group.</p>
+          <div class="stack">
+            <span class="svc-status" hidden></span>
+          </div>
+          <div class="project-links">
+            <a href="https://githup.stux.group" target="_blank" rel="noopener">Website</a>
+            <a href="https://githup.stux.group/demo/" target="_blank" rel="noopener">Live demo</a>
+            <a href="https://github.com/StuxGroup/GitHup" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="subhead">Our companies</h3>
+      <div class="project-grid">
+
+        <article class="project-card" data-monitor="stux-dev">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-dev.png" width="56" height="56" alt="Stux.Dev icon" loading="lazy">
+            <div>
+              <h3>Stux.Dev</h3>
+              <div class="project-tagline">We build the tools we wished existed.</div>
+            </div>
+          </div>
+          <p class="desc">Free web tools and utilities with no accounts, no ads, no analytics scripts and no third-party trackers.</p>
+          <div class="stack">
+            <span class="svc-status" hidden></span>
+          </div>
+          <div class="project-links">
+            <a href="https://stux.dev" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxDev" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stuxapis.png" width="56" height="56" alt="StuxAPIs icon" loading="lazy">
+            <div>
+              <h3>StuxAPIs</h3>
+              <div class="project-tagline">Powering the Stux.Group Ecosystem</div>
+            </div>
+          </div>
+          <p class="desc">Reliable, fast, well-documented APIs and libraries for the Stux.Group family of services and beyond.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://stuxapis.net" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxAPIs" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-monitor="stuxedo">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stuxedo.png" width="56" height="56" alt="Stuxedo icon" loading="lazy">
+            <div>
+              <h3>Stuxedo</h3>
+              <div class="project-tagline">The Smarter, Greener Option</div>
+            </div>
+          </div>
+          <p class="desc">Hosting and cloud services: dedicated servers, VPS and web hosting.</p>
+          <div class="stack">
+            <span class="badge-status soon">Coming soon</span><span class="svc-status" hidden></span>
+          </div>
+          <div class="project-links">
+            <a href="https://stuxedo.com" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/Stuxedo" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-cloud.png" width="56" height="56" alt="Stux.Cloud icon" loading="lazy">
+            <div>
+              <h3>Stux.Cloud</h3>
+              <div class="project-tagline">Powering everything, quietly &amp; securely!</div>
+            </div>
+          </div>
+          <p class="desc">The cloud and infrastructure brand behind Stuxedo's hosting and cloud services.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://stux.cloud" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxCloud" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-monitor="stux-music">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-music.png" width="56" height="56" alt="Stux.Music icon" loading="lazy">
+            <div>
+              <h3>Stux.Music</h3>
+              <div class="project-tagline">Independent Music, Done Right!</div>
+            </div>
+          </div>
+          <p class="desc">The record label for the artist Stux Sharp, and the websites and tools that release and promote the music.</p>
+          <div class="stack">
+            <span class="badge-status soon">Coming soon</span><span class="svc-status" hidden></span>
+          </div>
+          <div class="project-links">
+            <a href="https://stux.music" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxMusic" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-monitor="ream-st">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/ream-st.png" width="56" height="56" alt="Ream.st icon" loading="lazy">
+            <div>
+              <h3>Ream.st</h3>
+              <div class="project-tagline">One Viewer, One Provider, Multiple Streams!</div>
+            </div>
+          </div>
+          <p class="desc">Free multi-view stream viewers, so you can follow every play, angle and creator at once. No accounts, no ads, no trackers.</p>
+          <div class="stack">
+            <span class="svc-status" hidden></span>
+          </div>
+          <div class="project-links">
+            <a href="https://ream.st" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/Ream-st" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="subhead">Services &amp; tools</h3>
+      <div class="project-grid compact">
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stuxs-tools.png" width="44" height="44" alt="Stuxs.Tools icon" loading="lazy">
+            <div>
+              <div class="owner">Stux.Dev</div>
+              <h3>Stuxs.Tools</h3>
+              <div class="project-tagline">Free browser utilities</div>
+            </div>
+          </div>
+          <p class="desc">One page per tool: network diagnostics, image processing, text manipulation, format converters and more.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://stuxs.tools" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxDev/Stuxs.Tools" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/downl-one.png" width="44" height="44" alt="Downl.one icon" loading="lazy">
+            <div>
+              <div class="owner">Stux.Dev</div>
+              <h3>Downl.one</h3>
+              <div class="project-tagline">Paste a link, get the media</div>
+            </div>
+          </div>
+          <p class="desc">A media downloader: paste a link and get the video or audio back in the best available quality.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://downl.one" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxDev/Downl.one" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/autoscroll.png" width="44" height="44" alt="AutoScroll icon" loading="lazy">
+            <div>
+              <div class="owner">Stux.Dev</div>
+              <h3>AutoScroll</h3>
+              <div class="project-tagline">Reddit, as a slideshow</div>
+            </div>
+          </div>
+          <p class="desc">A clean, auto-scrolling image gallery for Reddit.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://autoscroll.stux.dev" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxDev/AutoScroll" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-monitor="multi-st-twitch">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/multi-st-twitch.png" width="44" height="44" alt="Multi.st Twitch icon" loading="lazy">
+            <div>
+              <div class="owner">Ream.st</div>
+              <h3>Multi.st Twitch</h3>
+              <div class="project-tagline">Several Twitch streams at once</div>
+            </div>
+          </div>
+          <p class="desc">Watch several Twitch streams side by side in one tab.</p>
+          <div class="stack">
+            <span class="svc-status" hidden></span>
+          </div>
+          <div class="project-links">
+            <a href="https://twitch.multi.st" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/Ream-st/Multi.st-Twitch" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-monitor="multi-st-youtube">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/multi-st-youtube.png" width="44" height="44" alt="Multi.st YouTube icon" loading="lazy">
+            <div>
+              <div class="owner">Ream.st</div>
+              <h3>Multi.st YouTube</h3>
+              <div class="project-tagline">Several YouTube streams at once</div>
+            </div>
+          </div>
+          <p class="desc">Watch several YouTube streams side by side in one tab.</p>
+          <div class="stack">
+            <span class="svc-status" hidden></span>
+          </div>
+          <div class="project-links">
+            <a href="https://youtube.multi.st" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/Ream-st/Multi.st-Youtube" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-sharp.png" width="44" height="44" alt="Stux Sharp icon" loading="lazy">
+            <div>
+              <div class="owner">Stux.Music</div>
+              <h3>Stux Sharp</h3>
+              <div class="project-tagline">The artist's official site</div>
+            </div>
+          </div>
+          <p class="desc">The official website of the artist Stux Sharp.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://stuxsharp.com" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxMusic/StuxSharp.com" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/sharp-stux-music.png" width="44" height="44" alt="Sharp.Stux.Music icon" loading="lazy">
+            <div>
+              <div class="owner">Stux.Music</div>
+              <h3>Sharp.Stux.Music</h3>
+              <div class="project-tagline">Smart links for every release</div>
+            </div>
+          </div>
+          <p class="desc">The smart-link and release portal for Stux Sharp's music.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://sharp.stux.music" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxMusic/Sharp.Stux.Music" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="subhead">APIs &amp; libraries</h3>
+      <div class="project-grid compact">
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/seasonal-overlays.svg" width="44" height="44" alt="SeasonalOverlaysLibrary icon" loading="lazy">
+            <div>
+              <div class="owner">StuxAPIs</div>
+              <h3>SeasonalOverlaysLibrary</h3>
+              <div class="project-tagline">Particle overlays for any page</div>
+            </div>
+          </div>
+          <p class="desc">Snow, leaves, confetti, fireworks and more, triggered by a click or a seasonal calendar, from one dependency-free script. It's what plays on this page.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://seasonaloverlayslibrary.stuxapis.net" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxAPIs/SeasonalOverlaysLibrary" target="_blank" rel="noopener">Repository</a>
+            <button type="button" data-overlay-preset="random">Try a random one</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon on-tile" src="/assets/img/services/stuxapis.png" width="44" height="44" alt="Kittens icon" loading="lazy">
+            <div>
+              <div class="owner">StuxAPIs</div>
+              <h3>Kittens</h3>
+              <div class="project-tagline">Random kittens, on demand</div>
+            </div>
+          </div>
+          <p class="desc">An API that provides random images of kittens.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://kittens.stuxapis.net" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxAPIs/Kittens" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon on-tile" src="/assets/img/services/stuxapis.png" width="44" height="44" alt="SecretGen icon" loading="lazy">
+            <div>
+              <div class="owner">StuxAPIs</div>
+              <h3>SecretGen</h3>
+              <div class="project-tagline">Secrets, generated</div>
+            </div>
+          </div>
+          <p class="desc">A simple API that generates secrets.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://secretgen.stuxapis.net" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/StuxAPIs/SecretGen" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon on-tile" src="/assets/img/services/stuxapis.png" width="44" height="44" alt="Lunar Calendar icon" loading="lazy">
+            <div>
+              <div class="owner">StuxAPIs</div>
+              <h3>Lunar Calendar</h3>
+              <div class="project-tagline">Lunar dates as an API</div>
+            </div>
+          </div>
+          <p class="desc">A lunar calendar API: a StuxAPIs-hosted fork of hnthap's original project.</p>
+          <div class="stack">
+            
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/StuxAPIs/LunarCalendar" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="subhead">Templates</h3>
+      <div class="project-grid compact">
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-group.png" width="44" height="44" alt="Soonpage icon" loading="lazy">
+            <div>
+              <h3>Soonpage</h3>
+              <div class="project-tagline">&ldquo;Coming soon&rdquo;, done nicely</div>
+            </div>
+          </div>
+          <p class="desc">A clean and simple coming-soon landing page for Stux.Group projects.</p>
+          <div class="stack">
+            <span class="badge-status template">Template</span>
+          </div>
+          <div class="project-links">
+            <a href="https://soonpage.stux.group" target="_blank" rel="noopener">Preview</a>
+            <a href="https://github.com/StuxGroup/soonpage" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-group.png" width="44" height="44" alt="Maintenance Page icon" loading="lazy">
+            <div>
+              <h3>Maintenance Page</h3>
+              <div class="project-tagline">Back soon, promise</div>
+            </div>
+          </div>
+          <p class="desc">A maintenance page that keeps visitors informed while a service is being updated.</p>
+          <div class="stack">
+            <span class="badge-status template">Template</span>
+          </div>
+          <div class="project-links">
+            <a href="https://maintenancepage.stux.group" target="_blank" rel="noopener">Preview</a>
+            <a href="https://github.com/StuxGroup/maintenancepage" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-group.png" width="44" height="44" alt="Servicepage icon" loading="lazy">
+            <div>
+              <h3>Servicepage</h3>
+              <div class="project-tagline">For services still being set up</div>
+            </div>
+          </div>
+          <p class="desc">A placeholder for a Stux.Group service that hasn't been set up yet, pointing visitors back to Stux.Group.</p>
+          <div class="stack">
+            <span class="badge-status template">Template</span>
+          </div>
+          <div class="project-links">
+            <a href="https://servicepage.stux.group" target="_blank" rel="noopener">Preview</a>
+            <a href="https://github.com/StuxGroup/servicepage" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stuxedo.png" width="44" height="44" alt="Instance Page icon" loading="lazy">
+            <div>
+              <div class="owner">Stuxedo</div>
+              <h3>Instance Page</h3>
+              <div class="project-tagline">For Stuxedo customer servers</div>
+            </div>
+          </div>
+          <p class="desc">A landing page shown for a Stuxedo customer instance or server.</p>
+          <div class="stack">
+            <span class="badge-status template">Template</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Stuxedo/instancepage" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/stux-group.png" width="44" height="44" alt="GitHub Pages Redirect icon" loading="lazy">
+            <div>
+              <h3>GitHub Pages Redirect</h3>
+              <div class="project-tagline">username.github.io, redirected</div>
+            </div>
+          </div>
+          <p class="desc">A tiny template that sends a <code>username.github.io</code> site to your custom domain, keeping the path.</p>
+          <div class="stack">
+            <span class="badge-status template">Template</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/StuxGroup/GitHubPagesRedirect" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="subhead">Discontinued</h3>
+      <div class="project-grid compact">
+
+        <article class="project-card discontinued">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/services/gaymer-social.png" width="44" height="44" alt="Gaymer.Social icon" loading="lazy">
+            <div>
+              <h3>Gaymer.Social</h3>
+              <div class="project-tagline">Discontinued September 2026</div>
+            </div>
+          </div>
+          <p class="desc">LGBTQ+ Mastodon instances for gamers, Gaymer.Social and Gaymer.Coffee.</p>
+          <p class="discontinued-note">Shut down in September 2026, due to rising costs and the loss of hosting infrastructure in the NorthC data centre fire.</p>
+          <div class="stack">
+            <span class="badge-status archived">Discontinued</span>
+          </div>
+          <div class="project-links">
+            <a href="https://gaymer.social" target="_blank" rel="noopener">Website</a>
+            <a href="https://github.com/GaymerSocial" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="status">
+    <div class="container">
+      <div class="section-head">
+        <h2>Status</h2>
+        <p>Checked every 5 minutes by <a href="https://githup.stux.group" target="_blank" rel="noopener" style="color: var(--accent-bright);">GitHup</a>, with 90 days of history.</p>
+      </div>
+      <div class="status-band" id="status-band">
+        <div class="sb-main">
+          <span class="sb-dot" aria-hidden="true"></span>
+          <div>
+            <h2>Live status</h2>
+            <p>See every service's current status and uptime history.</p>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="https://status.stux.group" target="_blank" rel="noopener">Open status.stux.group</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2>Get in touch</h2>
+        <p>Questions about a service, or want to report a problem?</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:hello@stux.group">hello@stux.group</a>
+          <a class="btn btn-ghost" href="https://github.com/StuxGroup" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://stux.group" target="_blank" rel="noopener">stux.group</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>&copy; <span data-year data-year-start="2026"></span> Stux Group Ltd. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="/legal/">Boring Legal Stuff</a>
+        <a href="https://status.stux.group" target="_blank" rel="noopener">Status</a>
+        <a href="https://github.com/StuxGroup/Services" target="_blank" rel="noopener">Source</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
