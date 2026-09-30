@@ -3,6 +3,18 @@
 All notable changes to Stux.Group Services (services.stux.group) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.1.0
+
+### Added
+
+- A brand block in the footer of every page, **Stux.Group logo | A Stux.Group Service**, muted until hovered or focused (the logo fades in smoothly, with the same filter functions in every state)
+- A **Created with** line in the footer: a heart, code brackets and a coffee mug, by Stux.Group
+
+### Changed
+
+- The dev-mode banner is the shared Stux site banner: a muted strip with a label chip and a faint icon pattern. It stays at the top and pushes the page down by its exact height, and the sticky header sits below it, so nothing is covered, including on phones. In dev mode, `?banner=soon,maintenance,site` previews the other banner styles
+- The footer's copyright sign is an icon, with a hidden "©" for screen readers
+
 ## v1.0.0
 
 ### Added

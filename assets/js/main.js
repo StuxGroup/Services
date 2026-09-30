@@ -1,11 +1,31 @@
 (function () {
+  // Dev-only banners in the shared site-banner component (dev-server.js forces DEV_MODE on);
+  // ?banner=soon,maintenance,site previews the other styles.
   if (window.DEV_MODE) {
-    var banner = document.createElement("div");
-    banner.id = "dev-banner";
-    banner.innerHTML =
-      "Local development build — <code>window.DEV_MODE</code> is forced on by dev-server.js. " +
-      "Run with <code>--no-dev-mode</code> to test production behaviour.";
-    document.body.insertBefore(banner, document.body.firstChild);
+    var copy = {
+      maintenance: ["Maintenance", "Stux.Group Services is being updated and will be back shortly."],
+      soon: ["Coming soon", "Stux.Group Services is launching soon."],
+      dev: ["Dev mode", "Local preview of Stux.Group Services. Run <code>dev-server.sh --no-dev-mode</code> to see it as production does."],
+      site: ["Notice", "A site notice for Stux.Group Services appears here."]
+    };
+    var want = (new URLSearchParams(location.search).get("banner") || "").split(",");
+    var box = document.createElement("div");
+    box.className = "site-banners";
+    box.setAttribute("data-site-banners", "");
+    ["maintenance", "soon", "dev", "site"].forEach(function (v) {
+      if (v !== "dev" && want.indexOf(v) < 0) return;
+      var d = document.createElement("div");
+      d.className = "site-banner site-banner--" + v;
+      d.setAttribute("role", "note");
+      d.innerHTML = '<span class="site-banner-label"></span><span class="site-banner-text">' + copy[v][1] + "</span>";
+      d.firstChild.textContent = copy[v][0];
+      box.appendChild(d);
+    });
+    document.body.insertBefore(box, document.body.firstChild);
+    document.documentElement.classList.add("has-site-banner", "theme-dark");
+    var bs = document.createElement("script");
+    bs.src = "/assets/js/site-banner.js";
+    document.body.appendChild(bs);
   }
 
   var yearEls = document.querySelectorAll("[data-year]");
