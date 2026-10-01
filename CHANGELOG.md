@@ -4,6 +4,13 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.7.1
+
+### Changed
+
+- SeasonalOverlaysLibrary, Kittens and SecretGen now read their live badge from the new StuxAPIs Status page (new `stuxapis` source), now that the StuxAPIs group has moved off Stux.Group Status
+- The StuxAPIs company card's website link now goes to services.stuxapis.net, StuxAPIs' own services page
+
 ## v1.7.0
 
 ### Added
