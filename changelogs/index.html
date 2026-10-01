@@ -4,26 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0e0d0d">
-  <title>Page Not Found — Stux.Group Services</title>
-  <meta name="description" content="Page not found — Stux.Group Services">
+  <title>Changelogs — Stux.Group Services</title>
+  <meta name="description" content="Release notes for Stux.Group Services, release by release.">
   <link rel="icon" type="image/png" href="/assets/img/icon.png">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/site-banner.css">
   <script src="/assets/js/dev-mode.js"></script>
-  <style>
-    .not-found {
-      min-height: calc(100vh - 140px);
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      text-align: center; padding: 3rem 1.5rem;
-    }
-    .not-found .code {
-      font-weight: 800; font-size: clamp(3.5rem, 12vw, 6rem); line-height: 1;
-      background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
-      margin-bottom: 0.5rem; font-family: var(--font-display);
-    }
-    .not-found h1 { font-size: clamp(1.3rem, 4vw, 1.7rem); margin: 0 0 0.75rem; }
-    .not-found p { color: var(--text-muted); max-width: 420px; margin: 0 0 1.75rem; }
-  </style>
+  <link rel="canonical" href="https://services.stux.group/changelogs/">
 </head>
 <body>
 
@@ -42,11 +29,25 @@
     </div>
   </header>
 
-  <section class="not-found">
-    <div class="code">404</div>
-    <h1>Page not found</h1>
-    <p>Whatever you were looking for isn't here &mdash; the link might be old, or the page might have moved.</p>
-    <a class="btn btn-primary" href="/">&larr; Back to Stux.Group Services</a>
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="bc-sep">/</span>
+        <span class="bc-cur">Changelogs</span>
+      </div>
+      <h1 class="page-title">Changelogs</h1>
+      <p class="page-desc">What changed on this site, release by release, newest first. Source: <a href="https://github.com/StuxGroup/Services/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="cl-wrap">
+        <p class="cl-current">Current version: <span id="cl-version"></span></p>
+        <div id="cl-body" aria-live="polite"><p class="cl-msg">Loading the changelog&hellip;</p></div>
+      </div>
+    </div>
   </section>
 
   <footer class="site-footer">
@@ -68,5 +69,6 @@
   </footer>
 
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/changelogs.js" defer></script>
 </body>
 </html>

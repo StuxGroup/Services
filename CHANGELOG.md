@@ -3,6 +3,18 @@
 All notable changes to Stux.Group Services (services.stux.group) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.2.0
+
+### Added
+
+- A **Changelogs** page at `/changelogs/`, rendering this changelog in the site's own layout with colour-coded section badges (Added, Changed, Fixed, Removed, Security, Deprecated, always in that order). `/changelog/` redirects to it
+- The footer's version number (read from the published `VERSION.md`, falling back to "Changelogs") links to the changelogs page
+- `CHANGELOG.md` and `VERSION.md` are now published with the site
+
+### Removed
+
+- The "A Stux.Group Service" text link and its separator from the footer brand block; the logo, "Created with" line and links stay
+
 ## v1.1.0
 
 ### Added
