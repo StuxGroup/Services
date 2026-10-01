@@ -4,6 +4,13 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.10.1
+
+### Fixed
+
+- Stux.Dev is marked Coming soon (`data-state="soon"`)
+- The StuxAPIs card's Website link goes to stuxapis.net again, not services.stuxapis.net
+
 ## v1.10.0
 
 ### Added
