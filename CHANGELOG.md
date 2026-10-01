@@ -4,6 +4,12 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.10.2
+
+### Removed
+
+- The `.project-icon.on-tile` style, so icons can't be put in the bordered tile again
+
 ## v1.10.1
 
 ### Fixed
