@@ -4,6 +4,11 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.5.0
+
+### Changed
+- The hero's seasonal overlay button now asks a question: its label (derived from today's overlay, e.g. "Pumpkins") ends in "?" and switches to "!" while the overlay is playing, then goes back to "?" when it ends. The label change also applies when reduced motion is requested
+
 ## v1.4.1
 
 ### Fixed

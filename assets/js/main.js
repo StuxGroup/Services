@@ -121,8 +121,22 @@
   var preset = lib.resolveAutoPreset(new Date());
   var btn = document.getElementById("season-btn");
   if (btn && preset) {
-    btn.textContent = (LABEL[preset] || "\u2728 Today's overlay");
+    // "Pumpkins?" until the overlay is running, "Pumpkins!" while it runs. The
+    // text is the button's accessible name, so it updates for assistive tech too.
+    var baseLabel = (LABEL[preset] || "\u2728 Today's overlay");
+    var setActive = function (on) { btn.textContent = baseLabel + (on ? "!" : "?"); };
+    var running = function () { return !!document.getElementById("seasonal-overlays-container"); };
+    setActive(false);
     btn.hidden = false;
+    // The library has no "finished" event, so watch its container: it is added
+    // when an overlay starts and removed when it ends (or is stopped).
+    new MutationObserver(function () { setActive(running()); }).observe(document.body, { childList: true });
+    btn.addEventListener("click", function () {
+      setActive(true); // immediate, even if the overlay is skipped
+      // Safety net: if nothing is running shortly after (e.g. the overlay was
+      // suppressed), drop back to "?" once the default duration has passed.
+      setTimeout(function () { if (!running()) setActive(false); }, 2600);
+    });
   }
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var played = false;
