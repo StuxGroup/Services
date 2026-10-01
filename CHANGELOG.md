@@ -4,6 +4,14 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.8.0
+
+### Added
+
+- An "Artists" section holding the Stux Sharp and Sharp.Stux.Music cards, moved out of Services & tools
+- Live badges on the Stux Sharp and Sharp.Stux.Music cards, read from the new Stux.Music Status page (new `stux-music` source, status.stux.music)
+- A live badge on the Stux.Cloud card, read from the new Stux.Cloud monitor on Stux.Group Status
+
 ## v1.7.1
 
 ### Changed
