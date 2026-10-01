@@ -44,7 +44,6 @@ live status from the `data-monitor` shown (`source:slug`, default source `stux-g
 | Stuxedo | Hosting and cloud services | [stuxedo.com](https://stuxedo.com) | [Stuxedo](https://github.com/Stuxedo) (org) | Coming soon |
 | Stux.Cloud | The infrastructure behind Stuxedo | [stux.cloud](https://stux.cloud) | [StuxCloud](https://github.com/StuxCloud) (org) | Coming soon |
 | Stux.Music | The record label for the artist Stux Sharp | [stux.music](https://stux.music) | [StuxMusic](https://github.com/StuxMusic) (org) | Coming soon |
-| Ream.st | Free multi-view stream viewers | [ream.st](https://ream.st) | [Ream-st](https://github.com/Ream-st) (org) | Live: `ream-st` |
 
 ### Services & tools
 
@@ -54,10 +53,11 @@ live status from the `data-monitor` shown (`source:slug`, default source `stux-g
 | Downl.one | Media downloader | [downl.one](https://downl.one) | — (private) | Live: `stux-dev:downl-one` |
 | AutoScroll | Auto-scrolling image gallery for Reddit | [autoscroll.stux.dev](https://autoscroll.stux.dev) | [StuxDev/AutoScroll](https://github.com/StuxDev/AutoScroll) | Live: `stux-dev:autoscroll` |
 | Sm.lol | Short links, bio pages, QR codes, vCard and file links | [sm.lol](https://sm.lol) | — (private) | Live: `stux-dev:sm-lol` |
-| Multi.st Twitch | Several Twitch streams at once | [twitch.multi.st](https://twitch.multi.st) | — (private) | Live: `multi-st-twitch` |
-| Multi.st YouTube | Several YouTube streams at once | [youtube.multi.st](https://youtube.multi.st) | — (private) | Live: `multi-st-youtube` |
+| Ream.st | Free multi-view stream viewers | [ream.st](https://ream.st) | [Ream-st](https://github.com/Ream-st) (org) | Live: `ream-st:ream-st` |
+| Multi.st Twitch | Several Twitch streams at once | [twitch.multi.st](https://twitch.multi.st) | — (private) | Live: `ream-st:multi-st-twitch` |
+| Multi.st YouTube | Several YouTube streams at once | [youtube.multi.st](https://youtube.multi.st) | — (private) | Live: `ream-st:multi-st-youtube` |
 
-### Artists
+### Artists & Smart Links
 
 | Service | What it is | Site | Repo | Badge |
 |---|---|---|---|---|
@@ -108,6 +108,7 @@ monitor, or no status available, the card has no badge.
 | `stux-group` (default) | [status.stux.group](https://status.stux.group) | [StuxGroup/Status](https://github.com/StuxGroup/Status) |
 | `stux-dev` | [status.stux.dev](https://status.stux.dev) | [StuxDev/Status](https://github.com/StuxDev/Status) |
 | `stuxapis` | [status.stuxapis.net](https://status.stuxapis.net) | [StuxAPIs/Status](https://github.com/StuxAPIs/Status) |
+| `ream-st` | [status.ream.st](https://status.ream.st) | [Ream-st/Status](https://github.com/Ream-st/Status) |
 | `stux-music` | [status.stux.music](https://status.stux.music) | [StuxMusic/Status](https://github.com/StuxMusic/Status) |
 | `stuxiedev` | [status.stuxie.dev](https://status.stuxie.dev) | [StuxieDev/Status](https://github.com/StuxieDev/Status) |
 | `robostux` | [status.robo.st](https://status.robo.st) | [RoboStux/Status](https://github.com/RoboStux/Status) |

@@ -4,6 +4,22 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.10.0
+
+### Added
+
+- A `ream-st` status source (status.ream.st, Ream.st's new status page), and a Status link on the Ream.st card
+
+### Changed
+
+- Ream.st moved from Our companies to Services & tools, since it is a Stux.Group service, not a brand
+- Ream.st, Multi.st Twitch and Multi.st YouTube now read their live badge from status.ream.st, as they have moved off Stux.Group Status
+- The Artists section is now "Artists & Smart Links"
+
+### Fixed
+
+- Sm.lol's and Lunar Calendar's icons no longer sit in the bordered tile
+
 ## v1.9.0
 
 ### Added
