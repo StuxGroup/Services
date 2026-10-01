@@ -4,6 +4,15 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.6.0
+
+### Added
+- The status section's dot pulses with the same expanding, fading ring as the Online badge dot, coloured by state (green up, amber degraded or partial, red down). It stays still when reduced motion is requested
+
+### Fixed
+- Coming soon and Maintenance badges showed two icons (two rockets, two wrenches) because the glyph artwork held a pair; each now shows a single rocket or wrench. Every badge now has exactly one icon: the glyph, the status dot, or none
+- The Discontinued badge picked up its grey colours (the HTML class `discontinued` had no style)
+
 ## v1.5.0
 
 ### Changed
