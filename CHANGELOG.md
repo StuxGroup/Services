@@ -4,6 +4,12 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.8.2
+
+### Fixed
+
+- Stux.Cloud is marked Coming soon (`data-state="soon"`), which takes precedence over its live badge
+
 ## v1.8.1
 
 ### Fixed
