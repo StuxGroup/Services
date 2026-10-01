@@ -57,7 +57,8 @@ tools**, **APIs & libraries**, **Templates** and **Discontinued**.
 4. **Live status:** with no `data-state`, a card with `data-monitor="<slug>"` (a slug monitored by
    `StuxGroup/Status`) gets one live badge from `main.js`: Online, Degraded or Offline. Add
    `<span class="badge-status live" hidden></span>` above the description; don't hard-code a
-   "Live" badge, because it can't be kept accurate. No monitor, or status unavailable: no badge
+   "Live" badge, because it can't be kept accurate. No monitor, or status unavailable: no badge.
+   A status page's own card uses `data-monitor="<source>:*"` to show that page's overall status
 5. When a service is discontinued, move its card into "Discontinued", add the `discontinued`
    class and `data-state="discontinued"`, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 6. Update the hero's service count if it changed

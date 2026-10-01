@@ -4,6 +4,12 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.8.1
+
+### Fixed
+
+- The Status card now has a live badge, showing status.stux.group's overall status (`data-monitor="<source>:*"`)
+
 ## v1.8.0
 
 ### Added

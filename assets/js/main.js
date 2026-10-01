@@ -87,6 +87,7 @@
     "robostux": { url: RAW + "RoboStux/Status/main/data/summary.json", site: "status.robo.st" }
   };
   var PILL = { up: "Online", degraded: "Degraded", down: "Offline" };
+  var WHOLE = { up: "All operational", degraded: "Degraded", partial: "Partial outage", down: "Major outage" };
   var OVERALL = {
     up: "All systems operational", degraded: "Degraded performance",
     partial: "Partial outage", down: "Major outage"
@@ -113,11 +114,12 @@
       document.querySelectorAll("[data-monitor]").forEach(function (card) {
         var want = monitorOf(card);
         if (want.source !== source) return;
-        var m = bySlug[want.slug];
-        if (stateOf(card) || !m || !PILL[m.status]) return;
+        // "<source>:*" is the status page's overall status (used by the Status cards).
+        var m = want.slug === "*" ? { status: summary.status } : bySlug[want.slug];
+        if (stateOf(card) || !m || !(want.slug === "*" ? WHOLE[m.status] : PILL[m.status])) return;
         var badge = badgeOf(card);
-        badge.className = "badge-status " + m.status;
-        badge.textContent = PILL[m.status];
+        badge.className = "badge-status " + (m.status === "partial" ? "degraded" : m.status);
+        badge.textContent = want.slug === "*" ? WHOLE[m.status] : PILL[m.status];
         badge.title = "Live from " + SOURCES[source].site;
         badge.hidden = false;
       });
