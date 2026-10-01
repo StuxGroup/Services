@@ -79,7 +79,7 @@ dependency-free Node script (`dev-server.js`); Node just needs to be installed. 
 
 ## License
 
-&copy; 2026 Stux Group Ltd. All rights reserved. This repository is not licensed for reuse or
+&copy; 2026 Stux.Group. All rights reserved. This repository is not licensed for reuse or
 redistribution. Lato and Poppins (`assets/fonts/`) are under the SIL Open Font License.
 
 ---

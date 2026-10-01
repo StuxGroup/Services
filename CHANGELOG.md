@@ -3,6 +3,16 @@
 All notable changes to Stux.Group Services (services.stux.group) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.3.1
+
+### Changed
+
+- The copyright line reads Stux.Group instead of Stux Group Ltd
+
+### Fixed
+
+- The footer's Created-with icons are optically sized, so the heart no longer looks bigger than the code and coffee icons
+
 ## v1.3.0
 
 ### Added
