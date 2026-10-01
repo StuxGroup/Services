@@ -3,6 +3,13 @@
 All notable changes to Stux.Group Services (services.stux.group) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## v1.4.1
+
+### Fixed
+- Kittens and SecretGen show their own icons (the orange cat and the blue padlock) instead of the generic StuxAPIs logo
+- SeasonalOverlaysLibrary has a new icon in the library's own purple: a snowflake on stacked overlay layers, replacing the old orange tile
+
 ## v1.4.0
 
 ### Added
