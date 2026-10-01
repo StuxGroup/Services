@@ -4,6 +4,26 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.7.0
+
+### Added
+
+- Live status badges on far more cards: `data-monitor="<source>:<slug>"` reads another status page's `summary.json` (sources `stux-group` (default), `stux-dev`, `stuxiedev`, `robostux`), so Stuxs.Tools, Downl.one and AutoScroll show their live badge from Stux.Dev Status, and SeasonalOverlaysLibrary, Kittens and SecretGen from the new StuxAPIs group on Stux.Group Status
+- `scripts/check-repo-links.sh`, which lists linked GitHub repositories that are not public, and a matching rule in `CONTRIBUTING.md`
+
+### Changed
+
+- Cards still keep one badge each, with the same precedence as before (declared state first, then the live status)
+
+### Fixed
+
+- SeasonalOverlaysLibrary no longer overflows its card: the title wraps at Seasonal / Overlays / Library
+- The template names are "Maintenancepage" and "Instancepage" (one word, like Soonpage and Servicepage) in the cards, alt text and README
+
+### Removed
+
+- The "Repository" link from cards whose repository is private: Multi.st Twitch, Multi.st YouTube, Stuxs.Tools, Downl.one, Stux Sharp and Sharp.Stux.Music (and the matching README table entries)
+
 ## v1.6.0
 
 ### Added

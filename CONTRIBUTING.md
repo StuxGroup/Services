@@ -89,3 +89,4 @@ each its own folder with an `index.html`, linked from the **Boring Legal Stuff**
   but a live look is the only real check of how it renders
 - Check both the dev-mode banner (default) and `--no-dev-mode` if you touched `dev-server.js` or
   `assets/js/dev-mode.js`
+- Only link a repository if it is public: no "Repository" link on a card for a private or missing repo. Run `scripts/check-repo-links.sh` (needs `gh`) to list linked repos that are not public

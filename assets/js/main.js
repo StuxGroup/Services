@@ -41,7 +41,7 @@
   // declared state(s); the first that applies wins (discontinued, template,
   // maintenance, soon). The HTML already renders it, so this only re-resolves
   // a card with several states. With no state, the live status from
-  // status.stux.group fills the badge for cards with data-monitor="<slug>",
+  // the status pages named by data-monitor="<slug>" or "<source>:<slug>" fill the badge,
   // and nothing is shown if it can't load.
   var STATES = [
     ["discontinued", "archived", "Discontinued"], ["template", "template", "Template"],
@@ -75,35 +75,59 @@
     badge.appendChild(document.createTextNode(st[2]));
     badge.hidden = false;
   });
-  var SUMMARY = "https://raw.githubusercontent.com/StuxGroup/Status/main/data/summary.json";
+  // Live status sources: data-monitor="<slug>" reads the Stux.Group Status page,
+  // data-monitor="<source>:<slug>" reads another status page's summary.json.
+  var RAW = "https://raw.githubusercontent.com/";
+  var SOURCES = {
+    "stux-group": { url: RAW + "StuxGroup/Status/main/data/summary.json", site: "status.stux.group" },
+    "stux-dev": { url: RAW + "StuxDev/Status/main/data/summary.json", site: "status.stux.dev" },
+    "stuxiedev": { url: RAW + "StuxieDev/Status/main/data/summary.json", site: "status.stuxie.dev" },
+    "robostux": { url: RAW + "RoboStux/Status/main/data/summary.json", site: "status.robo.st" }
+  };
   var PILL = { up: "Online", degraded: "Degraded", down: "Offline" };
   var OVERALL = {
     up: "All systems operational", degraded: "Degraded performance",
     partial: "Partial outage", down: "Major outage"
   };
-  fetch(SUMMARY + "?t=" + Date.now(), { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (summary) {
+  function monitorOf(card) {
+    var v = card.getAttribute("data-monitor") || "";
+    var i = v.indexOf(":");
+    return i < 0 ? { source: "stux-group", slug: v } : { source: v.slice(0, i), slug: v.slice(i + 1) };
+  }
+  function loadSummary(source) {
+    return fetch(SOURCES[source].url + "?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+  var wanted = {};
+  document.querySelectorAll("[data-monitor]").forEach(function (card) {
+    var m = monitorOf(card);
+    if (SOURCES[m.source]) wanted[m.source] = true;
+  });
+  wanted["stux-group"] = true; // the page-wide status band
+  Object.keys(wanted).forEach(function (source) {
+    loadSummary(source).then(function (summary) {
       var bySlug = {};
       (summary.monitors || []).forEach(function (m) { bySlug[m.slug] = m; });
       document.querySelectorAll("[data-monitor]").forEach(function (card) {
-        var m = bySlug[card.getAttribute("data-monitor")];
+        var want = monitorOf(card);
+        if (want.source !== source) return;
+        var m = bySlug[want.slug];
         if (stateOf(card) || !m || !PILL[m.status]) return;
         var badge = badgeOf(card);
         badge.className = "badge-status " + m.status;
         badge.textContent = PILL[m.status];
-        badge.title = "Live from status.stux.group";
+        badge.title = "Live from " + SOURCES[source].site;
         badge.hidden = false;
       });
       var band = document.getElementById("status-band");
-      if (band && OVERALL[summary.status]) {
+      if (source === "stux-group" && band && OVERALL[summary.status]) {
         band.className = "status-band " + summary.status;
         band.querySelector("h2").textContent = OVERALL[summary.status];
         var n = (summary.monitors || []).length;
         band.querySelector("p").textContent = n + " services checked every 5 minutes by GitHup.";
       }
-    })
-    .catch(function () {});
+    }).catch(function () {});
+  });
 
   // Seasonal overlays: SeasonalOverlaysLibrary (StuxAPIs) plays today's preset
   // from its seasonal calendar. It plays once per visit on its own (never for

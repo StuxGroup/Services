@@ -35,21 +35,21 @@ and, usually, its own site. It's built the same way as
 | Stux.Cloud | The infrastructure behind Stuxedo | [stux.cloud](https://stux.cloud) | [StuxCloud](https://github.com/StuxCloud) (org) |
 | Stux.Music | The record label for the artist Stux Sharp | [stux.music](https://stux.music) | [StuxMusic](https://github.com/StuxMusic) (org) |
 | Ream.st | Free multi-view stream viewers | [ream.st](https://ream.st) | [Ream-st](https://github.com/Ream-st) (org) |
-| Stuxs.Tools | Free browser utilities, one page per tool | [stuxs.tools](https://stuxs.tools) | [StuxDev/Stuxs.Tools](https://github.com/StuxDev/Stuxs.Tools) |
-| Downl.one | Media downloader | [downl.one](https://downl.one) | [StuxDev/Downl.one](https://github.com/StuxDev/Downl.one) |
+| Stuxs.Tools | Free browser utilities, one page per tool | [stuxs.tools](https://stuxs.tools) | — (private) |
+| Downl.one | Media downloader | [downl.one](https://downl.one) | — (private) |
 | AutoScroll | Auto-scrolling image gallery for Reddit | [autoscroll.stux.dev](https://autoscroll.stux.dev) | [StuxDev/AutoScroll](https://github.com/StuxDev/AutoScroll) |
-| Multi.st Twitch | Several Twitch streams at once | [twitch.multi.st](https://twitch.multi.st) | [Ream-st/Multi.st-Twitch](https://github.com/Ream-st/Multi.st-Twitch) |
-| Multi.st YouTube | Several YouTube streams at once | [youtube.multi.st](https://youtube.multi.st) | [Ream-st/Multi.st-Youtube](https://github.com/Ream-st/Multi.st-Youtube) |
-| Stux Sharp | The artist Stux Sharp's official site | [stuxsharp.com](https://stuxsharp.com) | [StuxMusic/StuxSharp.com](https://github.com/StuxMusic/StuxSharp.com) |
-| Sharp.Stux.Music | Smart-link and release portal for Stux Sharp | [sharp.stux.music](https://sharp.stux.music) | [StuxMusic/Sharp.Stux.Music](https://github.com/StuxMusic/Sharp.Stux.Music) |
+| Multi.st Twitch | Several Twitch streams at once | [twitch.multi.st](https://twitch.multi.st) | — (private) |
+| Multi.st YouTube | Several YouTube streams at once | [youtube.multi.st](https://youtube.multi.st) | — (private) |
+| Stux Sharp | The artist Stux Sharp's official site | [stuxsharp.com](https://stuxsharp.com) | — (private) |
+| Sharp.Stux.Music | Smart-link and release portal for Stux Sharp | [sharp.stux.music](https://sharp.stux.music) | — (private) |
 | SeasonalOverlaysLibrary | Dependency-free seasonal particle overlays | [seasonaloverlayslibrary.stuxapis.net](https://seasonaloverlayslibrary.stuxapis.net) | [StuxAPIs/SeasonalOverlaysLibrary](https://github.com/StuxAPIs/SeasonalOverlaysLibrary) |
 | Kittens | Random kitten images API | [kittens.stuxapis.net](https://kittens.stuxapis.net) | [StuxAPIs/Kittens](https://github.com/StuxAPIs/Kittens) |
 | SecretGen | Secret generator API | [secretgen.stuxapis.net](https://secretgen.stuxapis.net) | [StuxAPIs/SecretGen](https://github.com/StuxAPIs/SecretGen) |
 | Lunar Calendar | Lunar calendar API (fork of hnthap's project) | — | [StuxAPIs/LunarCalendar](https://github.com/StuxAPIs/LunarCalendar) |
 | Soonpage | "Coming soon" page template | [soonpage.stux.group](https://soonpage.stux.group) | [StuxGroup/soonpage](https://github.com/StuxGroup/soonpage) |
-| Maintenance Page | Maintenance page template | [maintenancepage.stux.group](https://maintenancepage.stux.group) | [StuxGroup/maintenancepage](https://github.com/StuxGroup/maintenancepage) |
+| Maintenancepage | Maintenance page template | [maintenancepage.stux.group](https://maintenancepage.stux.group) | [StuxGroup/maintenancepage](https://github.com/StuxGroup/maintenancepage) |
 | Servicepage | Placeholder for services not yet set up | [servicepage.stux.group](https://servicepage.stux.group) | [StuxGroup/servicepage](https://github.com/StuxGroup/servicepage) |
-| Instance Page | Landing page for Stuxedo customer servers | — | [Stuxedo/instancepage](https://github.com/Stuxedo/instancepage) |
+| Instancepage | Landing page for Stuxedo customer servers | — | [Stuxedo/instancepage](https://github.com/Stuxedo/instancepage) |
 | GitHub Pages Redirect | Redirects `username.github.io` to a custom domain | — | [StuxGroup/GitHubPagesRedirect](https://github.com/StuxGroup/GitHubPagesRedirect) |
 | Gaymer.Social | LGBTQ+ Mastodon instances (discontinued September 2026) | [gaymer.social](https://gaymer.social) | [GaymerSocial](https://github.com/GaymerSocial) (org) |
 
