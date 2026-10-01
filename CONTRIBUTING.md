@@ -48,13 +48,18 @@ tools**, **APIs & libraries**, **Templates** and **Discontinued**.
 1. Add/update the entry in the README's services table
 2. Add/update the matching `<article class="project-card">` block in `index.html`. For a service
    that belongs to one of the companies, add `<div class="owner">Company</div>` above the name
-3. **Live status:** if `StuxGroup/Status` monitors it, give the card `data-monitor="<slug>"` and a
-   `<span class="svc-status" hidden></span>` in its `.stack`. `main.js` fills it in; don't
-   hard-code a "Live" badge, because it can't be kept accurate
-4. **Lifecycle badges** are only for states a check can't show: `badge-status soon` (Coming
-   soon), `badge-status template` (Template) or `badge-status archived` (Discontinued)
+3. **One badge per card**, above the description (`<span class="badge-status ...">` before
+   `<p class="desc">`). Declare the state on the `<article>` with `data-state="discontinued"`,
+   `"template"`, `"maintenance"` or `"soon"` and render the matching badge in the HTML (e.g.
+   `<span class="badge-status soon"><i class="badge-ico" aria-hidden="true"></i>Coming soon</span>`;
+   Maintenance uses the `maintenance` class and the same icon element). If several states are
+   listed, the first that applies wins: Discontinued, Template, Maintenance, Coming soon
+4. **Live status:** with no `data-state`, a card with `data-monitor="<slug>"` (a slug monitored by
+   `StuxGroup/Status`) gets one live badge from `main.js`: Online, Degraded or Offline. Add
+   `<span class="badge-status live" hidden></span>` above the description; don't hard-code a
+   "Live" badge, because it can't be kept accurate. No monitor, or status unavailable: no badge
 5. When a service is discontinued, move its card into "Discontinued", add the `discontinued`
-   class, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
+   class and `data-state="discontinued"`, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 6. Update the hero's service count if it changed
 
 ## Seasonal overlays

@@ -54,8 +54,9 @@ and, usually, its own site. It's built the same way as
 | Gaymer.Social | LGBTQ+ Mastodon instances (discontinued September 2026) | [gaymer.social](https://gaymer.social) | [GaymerSocial](https://github.com/GaymerSocial) (org) |
 
 This table (and the matching cards on the site) is the source of truth for what's listed. Update
-both together when a service is added, retired or renamed. A card gets a live status pill when it
-has a `data-monitor` matching a monitor slug in `StuxGroup/Status`'s `.githup.yml`.
+both together when a service is added, retired or renamed. Each card shows one badge above its description: Discontinued, Template, Maintenance or Coming
+soon (from `data-state`, in that order of precedence), otherwise a live Online / Degraded / Offline
+badge when it has a `data-monitor` matching a monitor slug in `StuxGroup/Status`'s `.githup.yml`.
 
 ## Local development
 

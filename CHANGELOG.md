@@ -3,6 +3,18 @@
 All notable changes to Stux.Group Services (services.stux.group) are documented here. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.0
+
+### Added
+
+- A Maintenance badge (the site banner's wrench icon and orange) and a Coming soon badge with the banner's rocket icon in purple, declared with `data-state` on a card
+- Live status badges read Online (with a pulsing green dot, still when reduced motion is requested), Degraded and Offline
+
+### Changed
+
+- Every service card shows exactly one badge, above its description. The first that applies wins: Discontinued, Template, Maintenance, Coming soon, then the live status. Cards with no state and no monitor show none
+- Card states are declared with `data-state` instead of separate badge and status spans; `main.js` only fills the live badge when no state applies
+
 ## v1.3.1
 
 ### Changed
