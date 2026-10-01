@@ -74,6 +74,7 @@ Every Stux.Music artist is also listed on [artists.stux.music](https://artists.s
 | SeasonalOverlaysLibrary | Dependency-free seasonal particle overlays | [seasonaloverlayslibrary.stuxapis.net](https://seasonaloverlayslibrary.stuxapis.net) | [StuxAPIs/SeasonalOverlaysLibrary](https://github.com/StuxAPIs/SeasonalOverlaysLibrary) | Live: `stuxapis:seasonaloverlayslibrary` |
 | Kittens | Random kitten images API | [kittens.stuxapis.net](https://kittens.stuxapis.net) | [StuxAPIs/Kittens](https://github.com/StuxAPIs/Kittens) | Live: `stuxapis:kittens` |
 | SecretGen | Secret generator API | [secretgen.stuxapis.net](https://secretgen.stuxapis.net) | [StuxAPIs/SecretGen](https://github.com/StuxAPIs/SecretGen) | Live: `stuxapis:secretgen` |
+| GithubStats | GitHub statistics cards API | [githubstats.stuxapis.net](https://githubstats.stuxapis.net) | [StuxAPIs/GithubStats](https://github.com/StuxAPIs/GithubStats) | Live: `stuxapis:githubstats` |
 | Lunar Calendar | Lunar calendar API (fork of hnthap's project) | — | [StuxAPIs/LunarCalendar](https://github.com/StuxAPIs/LunarCalendar) | Coming soon |
 
 ### Templates

@@ -4,6 +4,12 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.10.3
+
+### Added
+
+- A GithubStats card in APIs & libraries, with a live badge from StuxAPIs Status (`stuxapis:githubstats`)
+
 ## v1.10.2
 
 ### Removed
