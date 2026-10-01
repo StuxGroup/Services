@@ -4,6 +4,18 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.9.0
+
+### Added
+
+- A Sm.lol card in Services & tools, with a live badge from Stux.Dev Status (`stux-dev:sm-lol`)
+- README: the services list is now split into the site's sections, with each card's badge, plus a Badges section documenting the status sources and `<source>:*`
+
+### Changed
+
+- Lunar Calendar is marked Coming soon, matching services.stuxapis.net
+- README: StuxAPIs' site is now services.stuxapis.net, and the Artists section points to artists.stux.music
+
 ## v1.8.3
 
 ### Fixed
