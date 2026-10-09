@@ -39,10 +39,10 @@ live status from the `data-monitor` shown (`source:slug`, default source `stux-g
 
 | Service | What it is | Site | Repo | Badge |
 |---|---|---|---|---|
-| Stux.Dev | Free, ad-free, no-account web tools | [stux.dev](https://stux.dev) | [StuxDev](https://github.com/StuxDev) (org) | Coming soon |
-| StuxAPIs | APIs and libraries for the Stux.Group ecosystem | [stuxapis.net](https://stuxapis.net) | [StuxAPIs](https://github.com/StuxAPIs) (org) | Coming soon |
 | Stuxedo | Hosting and cloud services | [stuxedo.com](https://stuxedo.com) | [Stuxedo](https://github.com/Stuxedo) (org) | Coming soon |
+| Stux.Dev | Free, ad-free, no-account web tools | [stux.dev](https://stux.dev) | [StuxDev](https://github.com/StuxDev) (org) | Coming soon |
 | Stux.Cloud | The infrastructure behind Stuxedo | [stux.cloud](https://stux.cloud) | [StuxCloud](https://github.com/StuxCloud) (org) | Coming soon |
+| StuxAPIs | APIs and libraries for the Stux.Group ecosystem | [stuxapis.net](https://stuxapis.net) | [StuxAPIs](https://github.com/StuxAPIs) (org) | Coming soon |
 | Stux.Music | The record label for the artist Stux Sharp | [stux.music](https://stux.music) | [StuxMusic](https://github.com/StuxMusic) (org) | Coming soon |
 | Stux.Digital | From idea to online: the front door for a new website | [stux.digital](https://stux.digital) | [StuxDigital](https://github.com/StuxDigital) (org) | Coming soon |
 | Stux.Design | The design studio behind every Stux.Group brand | [stux.design](https://stux.design) | [StuxDesign](https://github.com/StuxDesign) (org) | Coming soon |

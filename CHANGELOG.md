@@ -4,6 +4,12 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.12.1
+
+### Changed
+
+- Our brands is in the same order as the Stux.Group website: Stuxedo, Stux.Dev, Stux.Cloud, StuxAPIs, Stux.Music, Stux.Digital, Stux.Design, Stux.Games (in the README's table too)
+
 ## v1.12.0
 
 ### Added
