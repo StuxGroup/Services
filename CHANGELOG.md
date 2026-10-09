@@ -4,6 +4,17 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.12.0
+
+### Added
+
+- Stux.Digital, Stux.Design and Stux.Games under Our brands (all three coming soon), so all eight Stux.Group brands are listed
+
+### Changed
+
+- "Companies" is now "brands" throughout: the Our brands section, the hero ("The brands, services, APIs and templates…"), its count (8 brands) and the page description. The group's own name, the Stux.Group Brand of Companies, is unchanged
+- The brand cards (and Stuxs.Tools and Downl.one) show their icons straight from each brand's media host, the bright mark on dark and the deep one on light (`icon-light.png` / `icon-dark.png`), so a brand's new colours show up here without a site change
+
 ## v1.11.0
 
 ### Added

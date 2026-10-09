@@ -398,6 +398,14 @@ a { color: inherit; text-decoration: none; }
 /* Icons: every icon renders into a fixed square box and is scaled with
    object-fit, so non-square or oddly padded source images are never
    stretched or squashed. */
+/* Theme-swapped images: the bright mark on dark, the deep one on light. */
+.only-light { display: none !important; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .only-light { display: block !important; }
+  :root:not([data-theme="dark"]) .only-dark { display: none !important; }
+}
+:root[data-theme="light"] .only-light { display: block !important; }
+:root[data-theme="light"] .only-dark { display: none !important; }
 .project-icon {
   width: 56px;
   height: 56px;

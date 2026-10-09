@@ -4,7 +4,7 @@
 
 # Stux.Group Services
 
-### *Every Stux.Group company, service, API and template, in one place.*
+### *Every Stux.Group brand, service, API and template, in one place.*
 
 [Stux.Group Services](https://services.stux.group) is a small, static, no-build-step website that
 indexes the Stux.Group Brand of Companies and links out to everything, each with its own repository
@@ -35,7 +35,7 @@ live status from the `data-monitor` shown (`source:slug`, default source `stux-g
 | Status | Live status and uptime history of Stux.Group's services | [status.stux.group](https://status.stux.group) | [StuxGroup/Status](https://github.com/StuxGroup/Status) | Live: `stux-group:*` (overall) |
 | GitHup | Uptime monitoring and status pages, run entirely on GitHub | [githup.stux.group](https://githup.stux.group) | [StuxGroup/GitHup](https://github.com/StuxGroup/GitHup) | Live: `githup` |
 
-### Our companies
+### Our brands
 
 | Service | What it is | Site | Repo | Badge |
 |---|---|---|---|---|
@@ -44,6 +44,9 @@ live status from the `data-monitor` shown (`source:slug`, default source `stux-g
 | Stuxedo | Hosting and cloud services | [stuxedo.com](https://stuxedo.com) | [Stuxedo](https://github.com/Stuxedo) (org) | Coming soon |
 | Stux.Cloud | The infrastructure behind Stuxedo | [stux.cloud](https://stux.cloud) | [StuxCloud](https://github.com/StuxCloud) (org) | Coming soon |
 | Stux.Music | The record label for the artist Stux Sharp | [stux.music](https://stux.music) | [StuxMusic](https://github.com/StuxMusic) (org) | Coming soon |
+| Stux.Digital | From idea to online: the front door for a new website | [stux.digital](https://stux.digital) | [StuxDigital](https://github.com/StuxDigital) (org) | Coming soon |
+| Stux.Design | The design studio behind every Stux.Group brand | [stux.design](https://stux.design) | [StuxDesign](https://github.com/StuxDesign) (org) | Coming soon |
+| Stux.Games | Games and the open-source tools behind them | [stux.games](https://stux.games) | [StuxGames](https://github.com/StuxGames) (org) | Coming soon |
 
 ### Services & tools
 
