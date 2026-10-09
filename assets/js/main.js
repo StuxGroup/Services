@@ -22,7 +22,7 @@
       box.appendChild(d);
     });
     document.body.insertBefore(box, document.body.firstChild);
-    document.documentElement.classList.add("has-site-banner", "theme-dark");
+    document.documentElement.classList.add("has-site-banner");
     var bs = document.createElement("script");
     bs.src = "/assets/js/site-banner.js";
     document.body.appendChild(bs);

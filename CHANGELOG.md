@@ -4,6 +4,18 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.11.0
+
+### Added
+
+- A light theme, following the system preference: warm white backgrounds, dark text and a deeper Stux.Group red (`#b00c0c`) for links, with status badges recoloured to stay readable
+
+### Changed
+
+- Every colour in `style.css` is now a variable on `:root` (header, ghost buttons, accent tints, status badges, footer logo), so the dark theme looks the same and the light theme only redefines them
+- The dev-mode site banner follows the page theme instead of always using its dark style
+- Changelog section badges use their light-theme colours when the system is in light mode
+
 ## v1.10.3
 
 ### Added

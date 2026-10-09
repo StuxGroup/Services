@@ -27,7 +27,9 @@ a single dependency-free Node script; the only requirement is having Node itself
 - **Plain HTML/CSS/JS, no framework, no build step.** Every page is a real `.html` file: no
   templating engine, no client-side router. The layout follows
   [StuxieDev Projects](https://github.com/StuxieDev/Projects), recoloured in Stux.Group red
-  (`#d10f0f`, with a `#ff5a4f` highlight).
+  (`#d10f0f`, with a `#ff5a4f` highlight). It is dark by default, with a light theme that follows the
+  system preference: colours are variables on `:root` in `style.css`, redefined in its two light
+  blocks, so use the variables rather than hard-coding a colour.
 - The sitemap (`sitemap.xml`, `sitemap/index.html`, `robots.txt`) is generated: after adding or removing a page, edit the `PAGES` list in `scripts/build-sitemap.py` and run `python scripts/build-sitemap.py`, then commit the result. Add new root files to the copy step in `.github/workflows/pages.yml`.
 - Clean URLs use a folder-per-page layout (`legal/privacy/index.html` → `/legal/privacy/`).
 - Shared styles live in `assets/css/style.css`; shared behaviour in `assets/js/main.js`. Copy the
