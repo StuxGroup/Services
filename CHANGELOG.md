@@ -4,6 +4,16 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.12.3
+
+### Changed
+
+- The hero's count of services and sites is up to date (29): it counts every card except Discontinued, and hadn't been updated as brands and services were added
+
+### Removed
+
+- Stuxedo's Instancepage template: it's Stuxedo's own customer-server page, not a Stux.Group template, so it's no longer listed under Templates (or in the README)
+
 ## v1.12.2
 
 ### Changed

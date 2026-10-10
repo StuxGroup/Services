@@ -87,7 +87,6 @@ Every Stux.Music artist is also listed on [artists.stux.music](https://artists.s
 | Soonpage | "Coming soon" page template | [soonpage.stux.group](https://soonpage.stux.group) | [StuxGroup/soonpage](https://github.com/StuxGroup/soonpage) | Template |
 | Maintenancepage | Maintenance page template | [maintenancepage.stux.group](https://maintenancepage.stux.group) | [StuxGroup/maintenancepage](https://github.com/StuxGroup/maintenancepage) | Template |
 | Servicepage | Placeholder for services not yet set up | [servicepage.stux.group](https://servicepage.stux.group) | [StuxGroup/servicepage](https://github.com/StuxGroup/servicepage) | Template |
-| Instancepage | Landing page for Stuxedo customer servers | — | [Stuxedo/instancepage](https://github.com/Stuxedo/instancepage) | Template |
 | GitHub Pages Redirect | Redirects `username.github.io` to a custom domain | — | [StuxGroup/GitHubPagesRedirect](https://github.com/StuxGroup/GitHubPagesRedirect) | Template |
 
 ### Discontinued
