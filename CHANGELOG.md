@@ -4,6 +4,12 @@ All notable changes to Stux.Group Services (services.stux.group) are documented 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.13.1
+
+### Changed
+
+- Sm.lol's card uses its new tagline, "The internet, but smol", matching the rebranded sm.lol homepage
+
 ## v1.13.0
 
 ### Added
