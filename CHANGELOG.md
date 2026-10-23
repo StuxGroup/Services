@@ -5,6 +5,12 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.10.23-1
+
+### Changed
+
+- **Stux.Group is live:** its card no longer says "Coming soon" and shows Stux.Group's live status from the Status page instead, like the other live services
+
 ## v26.10.23
 
 ### Added

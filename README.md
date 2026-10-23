@@ -31,7 +31,7 @@ live status from the `data-monitor` shown (`source:slug`, default source `stux-g
 
 | Service | What it is | Site | Repo | Badge |
 |---|---|---|---|---|
-| Stux.Group | The parent of the Stux.Group Brand of Companies | [stux.group](https://stux.group) | [StuxGroup](https://github.com/StuxGroup) (org) | Coming soon |
+| Stux.Group | The parent of the Stux.Group Brand of Companies | [stux.group](https://stux.group) | [StuxGroup](https://github.com/StuxGroup) (org) | Live: `stux-group` |
 | Status | Live status and uptime history of Stux.Group's services | [status.stux.group](https://status.stux.group) | [StuxGroup/Status](https://github.com/StuxGroup/Status) | Live: `stux-group:*` (overall) |
 | GitHup | Uptime monitoring and status pages, run entirely on GitHub | [githup.stux.group](https://githup.stux.group) | [StuxGroup/GitHup](https://github.com/StuxGroup/GitHup) | Live: `githup` |
 
