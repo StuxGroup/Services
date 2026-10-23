@@ -103,6 +103,12 @@
     });
   }
 
+  // Under Node (tests/changelog.test.js) just export the parser; there's no page to fill.
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = { render: render, sortSections: sortSections, ORDER: ORDER };
+    return;
+  }
+
   var body = document.getElementById("cl-body");
   var badge = document.getElementById("cl-version");
   text(SOURCE.changelog).then(function (md) {

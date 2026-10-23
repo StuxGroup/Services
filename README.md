@@ -130,14 +130,25 @@ On Windows, use `dev-server.bat` instead. No `npm install` needed: the dev serve
 dependency-free Node script (`dev-server.js`); Node just needs to be installed. See
 [CONTRIBUTING.md](CONTRIBUTING.md) for more.
 
+Each page's icon tags, Open Graph tags and Discord link preview are generated into its `<head>` by
+`node scripts/build-head.js`; run it after changing a page's title or description. Run the tests
+with `bash tests/run.sh` (Node's built-in test runner, nothing to install).
+
 ## Releasing
 
 1. Update `CHANGELOG.md`
-2. Bump `VERSION.md`
+2. Set `VERSION.md` to today's UTC date (see [Versioning](#versioning))
 3. Update this README if relevant
-4. Run `./commit.sh` (or `commit.bat`): it reads `VERSION.md`, commits, and tags `vX.Y.Z`
+4. Run `./commit.sh` (or `commit.bat`): it reads `VERSION.md`, checks it's a valid Date Version,
+   commits, and tags it (`v26.10.23`)
 5. `git push origin main --tags`; the release workflow then publishes a GitHub Release from the
    matching `CHANGELOG.md` section
+
+## Versioning
+
+Stux.Group Services uses [Date Versioning](https://datevers.ing): each release is numbered by its
+UTC release date as `YY.MM.DD` (e.g. `26.10.23`), with `-1`, `-2`… for further releases that day.
+See [CHANGELOG.md](CHANGELOG.md) for what changed in each.
 
 ## License
 

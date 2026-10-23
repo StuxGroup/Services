@@ -18,19 +18,38 @@ cd Services
 ./dev-server.sh
 ```
 
-No install step: there's no `package.json`, no dependencies, nothing to build. `dev-server.js` is
+No install step: there's no `package.json` and no dependencies. `dev-server.js` is
 a single dependency-free Node script; the only requirement is having Node itself installed. Pass
 `--no-dev-mode` to test the site as it behaves in production (no dev banner).
 
+## Tests
+
+```
+bash tests/run.sh
+```
+
+The tests in `tests/*.test.js` use Node's built-in test runner (`node --test`), so there's nothing
+to install; CI runs them on every push. They check that `VERSION.md` is a valid Date Version
+matching the newest `CHANGELOG.md` heading, that the changelogs page parses Date Version headings
+and orders its sections, that every page's generated `<head>` block is up to date with valid
+Discord previews under the 3,000-byte limit, and that the icon set is complete.
+
 ## Project conventions
 
-- **Plain HTML/CSS/JS, no framework, no build step.** Every page is a real `.html` file: no
+- **Plain HTML/CSS/JS, no framework, no build step to deploy.** Every page is a real `.html` file: no
   templating engine, no client-side router. The layout follows
   [StuxieDev Projects](https://github.com/StuxieDev/Projects), recoloured in Stux.Group red
   (`#d10f0f`, with a `#ff5a4f` highlight). It is dark by default, with a light theme that follows the
   system preference: colours are variables on `:root` in `style.css`, redefined in its two light
   blocks, so use the variables rather than hard-coding a colour.
 - The sitemap (`sitemap.xml`, `sitemap/index.html`, `robots.txt`) is generated: after adding or removing a page, edit the `PAGES` list in `scripts/build-sitemap.py` and run `python scripts/build-sitemap.py`, then commit the result. Add new root files to the copy step in `.github/workflows/pages.yml`.
+- Every page's `<head>` has a block between `<!-- head:start ... -->` and `<!-- head:end -->`
+  written by `node scripts/build-head.js`: the icon tags (`favicon.ico`, the 512px icon,
+  `apple-touch-icon.png`, `site.webmanifest`), and on content pages the Open Graph tags and the
+  Discord link preview (`<script id="discord:component-embed">`), built from the page's own
+  `<title>` and meta description. Don't edit the block by hand: change the page or the script and
+  re-run it (`build-sitemap.py` runs it too). `--check` reports stale pages, and the tests fail on
+  them. The 404 page and the `/changelog/` redirect get the icons only, no preview
 - Clean URLs use a folder-per-page layout (`legal/privacy/index.html` → `/legal/privacy/`).
 - Shared styles live in `assets/css/style.css`; shared behaviour in `assets/js/main.js`. Copy the
   existing header/footer block when adding a page rather than introducing a templating system.
@@ -80,14 +99,23 @@ each its own folder with an `index.html`, linked from the **Boring Legal Stuff**
 
 ## Versioning and changelog
 
-- The version lives in `VERSION.md` (a bare version string); bump it on every release
+- Stux.Group Services uses [Date Versioning](https://datevers.ing) (since v26.10.23; semver
+  before that): the version is the UTC date of the release as `YY.MM.DD` (e.g. `26.10.23`), and a
+  second release on the same UTC day is `26.10.23-1`, then `-2` and so on. Use UTC (`date -u`),
+  not local time. Never a future date, never a date before the latest release, and a released
+  version is never reused
+- The version lives in `VERSION.md` (the bare version, no `v`); set it on every release. The `v`
+  only appears in git tags (`v26.10.23`) and changelog headings (`## v26.10.23`)
 - Every release gets a `CHANGELOG.md` entry using `###` subsections in this order: Added,
   Changed, Fixed, Removed, Security, Deprecated. Never a bare bullet list under a version
-- `commit.sh` (bash) and `commit.bat` (Windows) read `VERSION.md` and handle the commit and
-  `git tag`; the release workflow publishes a GitHub Release when the tag is pushed
+- `commit.sh` (bash) and `commit.bat` (Windows) read `VERSION.md`, refuse anything that isn't a
+  valid Date Version (or is dated in the future), warn if it's dated before today, and handle the
+  commit and `git tag`; they don't push. The release workflow publishes a GitHub Release when the
+  tag is pushed
 
 ## Before committing
 
+- Run `bash tests/run.sh`
 - Open changed pages via `./dev-server.sh` and click through: CI checks files and local links,
   but a live look is the only real check of how it renders
 - Check both the dev-mode banner (default) and `--no-dev-mode` if you touched `dev-server.js` or

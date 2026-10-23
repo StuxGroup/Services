@@ -1,8 +1,22 @@
 # Changelog
 
-All notable changes to Stux.Group Services (services.stux.group) are documented here. This
-project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to Stux.Group Services (services.stux.group) are documented here. Since
+v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release
+date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
+
+## v26.10.23
+
+### Added
+
+- Discord link previews: every page (except the 404 page and the old `/changelog/` redirect) carries a Discord component embed, a richer preview than the plain link card. The homepage shows the service count and every brand as a link, the Boring Legal Stuff hub links each legal page, the changelogs page shows the latest version, and every other page its name and description, each with a couple of link buttons. Open Graph tags are added alongside as the fallback for Discord and other apps
+- A full icon set: `favicon.ico` (16, 32 and 48px) and `apple-touch-icon.png` at the site root, and a `site.webmanifest` with 192px, 512px and maskable icons for Android home screens, listed identically on every page, 404 included
+- `scripts/build-head.js`, which writes the icon tags, Open Graph tags and Discord previews into every page's `<head>` (`--check` reports any page that's out of date), and a test suite (`bash tests/run.sh`) that CI runs on every push
+
+### Changed
+
+- Stux.Group Services switched from Semantic Versioning (the last semver release was v1.13.1) to [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD`, with `-1`, `-2`… for later releases the same day. `commit.sh` and `commit.bat` refuse a version that isn't a valid Date Version or is dated in the future, and warn when it's dated before today
+- The favicon is served from this site (the Stux.Group icon) instead of the light and dark icons on the brand's media host, so it no longer switches with the browser theme, but browsers that ask for `/favicon.ico` and phones saving the site to the home screen now find one
 
 ## v1.13.1
 

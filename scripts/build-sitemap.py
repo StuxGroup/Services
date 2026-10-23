@@ -92,6 +92,8 @@ def main() -> None:
         text = text.rstrip("\n") + "\n\n" + line + "\n"
     robots.write_text(text, encoding="utf-8", newline="\n")
     print(f"Wrote sitemap.xml, sitemap/index.html and robots.txt for {BASE_URL} ({len(PAGES)} pages)")
+    # sitemap/index.html copies the legal hub's <head>; regenerate its icon tags and previews.
+    subprocess.run(["node", str(ROOT / "scripts" / "build-head.js")], check=True)
 
 
 if __name__ == "__main__":
