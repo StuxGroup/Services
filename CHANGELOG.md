@@ -5,6 +5,13 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.10.31-1
+
+### Fixed
+
+- The changelogs page's link preview names the latest release (its `<head>` is rebuilt by `scripts/build-head.js`,
+  which v26.10.31 missed).
+
 ## v26.10.31
 
 ### Fixed
