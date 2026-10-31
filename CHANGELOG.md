@@ -5,6 +5,14 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.10.31
+
+### Fixed
+
+- **The Stux.Group logo in the footer is easy to see in both themes.** Greyed out, the red logo became a dark grey:
+  almost invisible on the dark theme and washed out on the light one. It's now lightened on dark backgrounds and
+  darkened on light ones (`--logo-base`), at 85% opacity, and still turns red on hover.
+
 ## v26.10.23-1
 
 ### Changed
