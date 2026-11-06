@@ -5,6 +5,15 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.06-3
+
+### Changed
+
+- The release steps in `README.md` and `CONTRIBUTING.md` describe the branch flow: work and release tags on `test`,
+  reaching `main` (and the live site) through a pull request. `commit.sh` and `commit.bat` suggest pushing to `test`
+- CI also runs on pushes to `test`
+- `README.md` lists the brand status pages each brand card links
+
 ## v26.11.06-2
 
 ### Changed
