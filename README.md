@@ -110,6 +110,7 @@ monitor, or no status available, the card has no badge.
 |---|---|---|
 | `stux-group` (default) | [status.stux.group](https://status.stux.group) | [StuxGroup/Status](https://github.com/StuxGroup/Status) |
 | `stux-dev` | [status.stux.dev](https://status.stux.dev) | [StuxDev/Status](https://github.com/StuxDev/Status) |
+| `stux-cloud` | [status.stux.cloud](https://status.stux.cloud) | [StuxCloud/Status](https://github.com/StuxCloud/Status) |
 | `stuxapis` | [status.stuxapis.net](https://status.stuxapis.net) | [StuxAPIs/Status](https://github.com/StuxAPIs/Status) |
 | `ream-st` | [status.ream.st](https://status.ream.st) | [Ream-st/Status](https://github.com/Ream-st/Status) |
 | `stux-music` | [status.stux.music](https://status.stux.music) | [StuxMusic/Status](https://github.com/StuxMusic/Status) |

@@ -81,6 +81,7 @@
   var SOURCES = {
     "stux-group": { url: RAW + "StuxGroup/Status/main/data/summary.json", site: "status.stux.group" },
     "stux-dev": { url: RAW + "StuxDev/Status/main/data/summary.json", site: "status.stux.dev" },
+    "stux-cloud": { url: RAW + "StuxCloud/Status/main/data/summary.json", site: "status.stux.cloud" },
     "stuxapis": { url: RAW + "StuxAPIs/Status/main/data/summary.json", site: "status.stuxapis.net" },
     "ream-st": { url: RAW + "Ream-st/Status/main/data/summary.json", site: "status.ream.st" },
     "stux-music": { url: RAW + "StuxMusic/Status/main/data/summary.json", site: "status.stux.music" },
