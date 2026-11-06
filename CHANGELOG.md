@@ -5,6 +5,18 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.06-1
+
+### Added
+
+- **Every brand card links its status page**, as Ream.st's already did: Stuxedo (status.stuxedo.net), Stux.Dev,
+  Stux.Cloud (the new status.stux.cloud), StuxAPIs, Stux.Music, Stux.Digital, Stux.Design and Stux.Games.
+
+### Changed
+
+- The Stux.Cloud card's live status comes from Stux.Cloud Status (new `stux-cloud` source), now that Stux.Cloud has
+  a status page of its own.
+
 ## v26.11.06
 
 ### Added
