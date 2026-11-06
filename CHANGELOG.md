@@ -5,6 +5,16 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.06-4
+
+### Added
+
+- A **Branches** section in `CONTRIBUTING.md`: work on `test`, reach `main` only through a pull request that needs CI to pass and is merged by Leo, with release commits and tags made on `test`
+
+### Changed
+
+- `README.md`'s Versioning section says releases are tagged on `test` and go live when the pull request into `main` is merged
+
 ## v26.11.06-3
 
 ### Changed

@@ -97,6 +97,12 @@ All six live under `legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaim
 each its own folder with an `index.html`, linked from the **Boring Legal Stuff** hub at
 `legal/index.html`. Keep them in sync with what the site actually does.
 
+## Branches
+
+- Work on `test`, or on a feature branch off it. Never push to `main`
+- Changes reach `main` only through a pull request from `test` into `main`, which needs CI to pass and is reviewed and merged by Leo
+- Merging into `main` deploys services.stux.group to GitHub Pages; release commits and tags are made on `test` (`git push origin test --tags`) and go live when the pull request is merged
+
 ## Versioning and changelog
 
 - Stux.Group Services uses [Date Versioning](https://datevers.ing) (since v26.10.23; semver
@@ -112,7 +118,6 @@ each its own folder with an `index.html`, linked from the **Boring Legal Stuff**
   valid Date Version (or is dated in the future), warn if it's dated before today, and handle the
   commit and `git tag`; they don't push. The release workflow publishes a GitHub Release when the
   tag is pushed
-- Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## Before committing
 
