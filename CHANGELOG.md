@@ -5,6 +5,24 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.06
+
+### Added
+
+- `scripts/badge-icons.py` builds badge-style icons for services without a logo of their own: the brand's mark on a
+  round avatar, with a badge in the corner saying what the service is.
+
+### Changed
+
+- **Every card uses its full name, with its own icon.** "Status" is now Stux.Group Status, with a heartbeat badge
+  on the Stux.Group mark; the templates are Stux.Group Soonpage, Maintenancepage, Servicepage and GitHub Pages
+  Redirect, each with its own badge instead of the shared Stux.Group icon. GithubStats and Lunar Calendar get their
+  own badges on the StuxAPIs mark. The icons' alt text uses the same full names.
+
+### Removed
+
+- `assets/img/services/status.svg`, replaced by the Stux.Group Status badge icon.
+
 ## v26.10.31-1
 
 ### Fixed

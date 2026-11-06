@@ -121,3 +121,4 @@ each its own folder with an `index.html`, linked from the **Boring Legal Stuff**
 - Check both the dev-mode banner (default) and `--no-dev-mode` if you touched `dev-server.js` or
   `assets/js/dev-mode.js`
 - Only link a repository if it is public: no "Repository" link on a card for a private or missing repo. Run `scripts/check-repo-links.sh` (needs `gh`) to list linked repos that are not public
+- Give every card its full name, in its heading and its icon's alt text ("Stux.Group Status", not "Status"), and its own icon, never a shared or generic one. A service without a logo of its own gets a badge-style icon (the brand's mark on a round avatar, with a badge saying what the service is) from `python -I scripts/badge-icons.py <brand> <brand icon-light.png> assets/img/services`; add a glyph and file name there for a new one

@@ -32,7 +32,7 @@ live status from the `data-monitor` shown (`source:slug`, default source `stux-g
 | Service | What it is | Site | Repo | Badge |
 |---|---|---|---|---|
 | Stux.Group | The parent of the Stux.Group Brand of Companies | [stux.group](https://stux.group) | [StuxGroup](https://github.com/StuxGroup) (org) | Live: `stux-group` |
-| Status | Live status and uptime history of Stux.Group's services | [status.stux.group](https://status.stux.group) | [StuxGroup/Status](https://github.com/StuxGroup/Status) | Live: `stux-group:*` (overall) |
+| Stux.Group Status | Live status and uptime history of Stux.Group's services | [status.stux.group](https://status.stux.group) | [StuxGroup/Status](https://github.com/StuxGroup/Status) | Live: `stux-group:*` (overall) |
 | GitHup | Uptime monitoring and status pages, run entirely on GitHub | [githup.stux.group](https://githup.stux.group) | [StuxGroup/GitHup](https://github.com/StuxGroup/GitHup) | Live: `githup` |
 
 ### Our brands
@@ -84,10 +84,10 @@ Every Stux.Music artist is also listed on [artists.stux.music](https://artists.s
 
 | Service | What it is | Site | Repo | Badge |
 |---|---|---|---|---|
-| Soonpage | "Coming soon" page template | [soonpage.stux.group](https://soonpage.stux.group) | [StuxGroup/soonpage](https://github.com/StuxGroup/soonpage) | Template |
-| Maintenancepage | Maintenance page template | [maintenancepage.stux.group](https://maintenancepage.stux.group) | [StuxGroup/maintenancepage](https://github.com/StuxGroup/maintenancepage) | Template |
-| Servicepage | Placeholder for services not yet set up | [servicepage.stux.group](https://servicepage.stux.group) | [StuxGroup/servicepage](https://github.com/StuxGroup/servicepage) | Template |
-| GitHub Pages Redirect | Redirects `username.github.io` to a custom domain | — | [StuxGroup/GitHubPagesRedirect](https://github.com/StuxGroup/GitHubPagesRedirect) | Template |
+| Stux.Group Soonpage | "Coming soon" page template | [soonpage.stux.group](https://soonpage.stux.group) | [StuxGroup/soonpage](https://github.com/StuxGroup/soonpage) | Template |
+| Stux.Group Maintenancepage | Maintenance page template | [maintenancepage.stux.group](https://maintenancepage.stux.group) | [StuxGroup/maintenancepage](https://github.com/StuxGroup/maintenancepage) | Template |
+| Stux.Group Servicepage | Placeholder for services not yet set up | [servicepage.stux.group](https://servicepage.stux.group) | [StuxGroup/servicepage](https://github.com/StuxGroup/servicepage) | Template |
+| Stux.Group GitHub Pages Redirect | Redirects `username.github.io` to a custom domain | — | [StuxGroup/GitHubPagesRedirect](https://github.com/StuxGroup/GitHubPagesRedirect) | Template |
 
 ### Discontinued
 
