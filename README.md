@@ -48,6 +48,12 @@ live status from the `data-monitor` shown (`source:slug`, default source `stux-g
 | Stux.Design | The design studio behind every Stux.Group brand | [stux.design](https://stux.design) | [StuxDesign](https://github.com/StuxDesign) (org) | Coming soon |
 | Stux.Games | Games and the open-source tools behind them | [stux.games](https://stux.games) | [StuxGames](https://github.com/StuxGames) (org) | Coming soon |
 
+Each brand card also links the brand's own status page: [Stuxedo](https://status.stuxedo.com/),
+[Stux.Dev](https://status.stux.dev), [Stux.Cloud](https://status.stux.cloud),
+[StuxAPIs](https://status.stuxapis.net), [Stux.Music](https://status.stux.music),
+[Stux.Digital](https://status.stux.digital), [Stux.Design](https://status.stux.design) and
+[Stux.Games](https://status.stux.games).
+
 ### Services & tools
 
 | Service | What it is | Site | Repo | Badge |
@@ -142,8 +148,11 @@ with `bash tests/run.sh` (Node's built-in test runner, nothing to install).
 3. Update this README if relevant
 4. Run `./commit.sh` (or `commit.bat`): it reads `VERSION.md`, checks it's a valid Date Version,
    commits, and tags it (`v26.10.23`)
-5. `git push origin main --tags`; the release workflow then publishes a GitHub Release from the
+5. `git push origin test --tags`; the release workflow then publishes a GitHub Release from the
    matching `CHANGELOG.md` section
+6. Open a pull request from `test` into `main`; the site deploys when it's merged
+
+Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## Versioning
 

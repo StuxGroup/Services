@@ -112,6 +112,7 @@ each its own folder with an `index.html`, linked from the **Boring Legal Stuff**
   valid Date Version (or is dated in the future), warn if it's dated before today, and handle the
   commit and `git tag`; they don't push. The release workflow publishes a GitHub Release when the
   tag is pushed
+- Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## Before committing
 
