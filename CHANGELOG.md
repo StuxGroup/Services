@@ -5,6 +5,13 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.06-2
+
+### Changed
+
+- The Stuxedo card's Status link goes to status.stuxedo.com, Stuxedo's status landing page (which leads to both
+  Stuxedo Web Status and Stuxedo Server Status), instead of straight to status.stuxedo.net.
+
 ## v26.11.06-1
 
 ### Added
