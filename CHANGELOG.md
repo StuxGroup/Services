@@ -5,6 +5,13 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.07
+
+### Fixed
+
+- The Stuxedo card's live status badge now reads Stuxedo Status (status.stuxedo.com) instead of the Stux.Group
+  Status page, through a new `stuxedo` source
+
 ## v26.11.06-6
 
 ### Changed
