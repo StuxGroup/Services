@@ -5,6 +5,15 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.06-5
+
+### Changed
+
+- **The hero's "Stux.Group" eyebrow is a live status badge.** Same size and pill as before, it now links to
+  status.stux.group and, once that answers, shows its overall status (All operational, Degraded, Partial outage or
+  Major outage) in the status badge colours, with a dot that pulses when everything's up (still with reduced
+  motion). If the status can't be read it stays a plain eyebrow. `CONTRIBUTING.md` documents it
+
 ## v26.11.06-4
 
 ### Added

@@ -84,6 +84,18 @@ tools**, **APIs & libraries**, **Templates** and **Discontinued**.
    class and `data-state="discontinued"`, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 6. Update the hero's service count if it changed
 
+### The hero eyebrow
+
+The small "Stux.Group" pill above the hero headline is a live status badge: a link to
+status.stux.group with `data-status-eyebrow="stux-group:*"` (the page's overall status; use
+`<source>:<slug>` for one monitor) and an empty `<span class="eyebrow-state" hidden></span>`.
+`main.js` reads that status page's `summary.json` and adds `up`, `degraded` or `down` to the
+eyebrow, with the text All operational, Degraded, Partial outage (styled as degraded) or Major
+outage (Online / Degraded / Offline for one monitor), and a "Live from status.stux.group" title.
+The CSS keeps the eyebrow's size and pill shape and gives it the status badge colours, a dot
+(pulsing when up, still under reduced motion) and a "·" before the state. If the fetch fails,
+nothing changes: it stays a plain eyebrow. Check it in both themes after touching it.
+
 ## Seasonal overlays
 
 `main.js` asks SeasonalOverlaysLibrary for today's preset from its calendar. It plays once per
