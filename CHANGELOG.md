@@ -5,6 +5,14 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.06-6
+
+### Changed
+
+- The live status eyebrow shows only the status once it loads ("All operational", "Degraded", "Partial outage" or
+  "Major outage"), without the "Stux.Group ·" in front. If the status can't be read, it stays the plain
+  "Stux.Group" eyebrow
+
 ## v26.11.06-5
 
 ### Changed

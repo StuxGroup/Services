@@ -88,13 +88,14 @@ tools**, **APIs & libraries**, **Templates** and **Discontinued**.
 
 The small "Stux.Group" pill above the hero headline is a live status badge: a link to
 status.stux.group with `data-status-eyebrow="stux-group:*"` (the page's overall status; use
-`<source>:<slug>` for one monitor) and an empty `<span class="eyebrow-state" hidden></span>`.
+`<source>:<slug>` for one monitor), holding `<span class="eyebrow-brand">Stux.Group</span>` and an
+empty `<span class="eyebrow-state" hidden></span>`.
 `main.js` reads that status page's `summary.json` and adds `up`, `degraded` or `down` to the
-eyebrow, with the text All operational, Degraded, Partial outage (styled as degraded) or Major
+eyebrow, hides the brand name and shows only the state: All operational, Degraded, Partial outage (styled as degraded) or Major
 outage (Online / Degraded / Offline for one monitor), and a "Live from status.stux.group" title.
 The CSS keeps the eyebrow's size and pill shape and gives it the status badge colours, a dot
-(pulsing when up, still under reduced motion) and a "·" before the state. If the fetch fails,
-nothing changes: it stays a plain eyebrow. Check it in both themes after touching it.
+(pulsing when up, still under reduced motion). If the fetch fails, nothing changes: it stays a
+plain "Stux.Group" eyebrow. Check it in both themes after touching it.
 
 ## Seasonal overlays
 

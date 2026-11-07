@@ -139,8 +139,10 @@
         if (etext) {
           eyebrow.classList.add(em.status === "partial" ? "degraded" : em.status);
           var es = eyebrow.querySelector(".eyebrow-state");
+          var eb = eyebrow.querySelector(".eyebrow-brand");
           es.textContent = etext;
           es.hidden = false;
+          if (eb) eb.hidden = true;   // the badge shows the status alone
           eyebrow.title = "Live from " + SOURCES[source].site;
         }
       }
