@@ -109,6 +109,14 @@
     if (SOURCES[m.source]) wanted[m.source] = true;
   });
   wanted["stux-group"] = true; // the page-wide status band
+  // The hero eyebrow: data-status-eyebrow="<source>:*" (overall) or "<source>:<slug>" (one monitor).
+  var eyebrow = document.querySelector("[data-status-eyebrow]");
+  var eyebrowWant = null;
+  if (eyebrow) {
+    var ev = eyebrow.getAttribute("data-status-eyebrow"), ei = ev.indexOf(":");
+    eyebrowWant = { source: ev.slice(0, ei), slug: ev.slice(ei + 1) };
+    if (SOURCES[eyebrowWant.source]) wanted[eyebrowWant.source] = true;
+  }
   Object.keys(wanted).forEach(function (source) {
     loadSummary(source).then(function (summary) {
       var bySlug = {};
@@ -125,6 +133,19 @@
         badge.title = "Live from " + SOURCES[source].site;
         badge.hidden = false;
       });
+      if (eyebrowWant && eyebrowWant.source === source) {
+        var em = eyebrowWant.slug === "*" ? { status: summary.status } : bySlug[eyebrowWant.slug];
+        var etext = em && (eyebrowWant.slug === "*" ? WHOLE[em.status] : PILL[em.status]);
+        if (etext) {
+          eyebrow.classList.add(em.status === "partial" ? "degraded" : em.status);
+          var es = eyebrow.querySelector(".eyebrow-state");
+          var eb = eyebrow.querySelector(".eyebrow-brand");
+          es.textContent = etext;
+          es.hidden = false;
+          if (eb) eb.hidden = true;   // the badge shows the status alone
+          eyebrow.title = "Live from " + SOURCES[source].site;
+        }
+      }
       var band = document.getElementById("status-band");
       if (source === "stux-group" && band && OVERALL[summary.status]) {
         band.className = "status-band " + summary.status;

@@ -84,6 +84,19 @@ tools**, **APIs & libraries**, **Templates** and **Discontinued**.
    class and `data-state="discontinued"`, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 6. Update the hero's service count if it changed
 
+### The hero eyebrow
+
+The small "Stux.Group" pill above the hero headline is a live status badge: a link to
+status.stux.group with `data-status-eyebrow="stux-group:*"` (the page's overall status; use
+`<source>:<slug>` for one monitor), holding `<span class="eyebrow-brand">Stux.Group</span>` and an
+empty `<span class="eyebrow-state" hidden></span>`.
+`main.js` reads that status page's `summary.json` and adds `up`, `degraded` or `down` to the
+eyebrow, hides the brand name and shows only the state: All operational, Degraded, Partial outage (styled as degraded) or Major
+outage (Online / Degraded / Offline for one monitor), and a "Live from status.stux.group" title.
+The CSS keeps the eyebrow's size and pill shape and gives it the status badge colours, a dot
+(pulsing when up, still under reduced motion). If the fetch fails, nothing changes: it stays a
+plain "Stux.Group" eyebrow. Check it in both themes after touching it.
+
 ## Seasonal overlays
 
 `main.js` asks SeasonalOverlaysLibrary for today's preset from its calendar. It plays once per
@@ -96,6 +109,12 @@ library can't load, the button stays hidden and nothing else changes.
 All six live under `legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaimer`, `opt-out`),
 each its own folder with an `index.html`, linked from the **Boring Legal Stuff** hub at
 `legal/index.html`. Keep them in sync with what the site actually does.
+
+## Branches
+
+- Work on `test`, or on a feature branch off it. Never push to `main`
+- Changes reach `main` only through a pull request from `test` into `main`, which needs CI to pass and is reviewed and merged by Leo
+- Merging into `main` deploys services.stux.group to GitHub Pages; release commits and tags are made on `test` (`git push origin test --tags`) and go live when the pull request is merged
 
 ## Versioning and changelog
 
@@ -112,7 +131,6 @@ each its own folder with an `index.html`, linked from the **Boring Legal Stuff**
   valid Date Version (or is dated in the future), warn if it's dated before today, and handle the
   commit and `git tag`; they don't push. The release workflow publishes a GitHub Release when the
   tag is pushed
-- Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## Before committing
 
