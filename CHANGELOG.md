@@ -5,6 +5,16 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.07-1
+
+### Added
+
+- A FlashView card (StuxAPIs) after SecretGen, with its icon and live status (`stuxapis:flashview`), and a README row
+
+### Changed
+
+- The hero and the Discord preview count 30 services and sites
+
 ## v26.11.07
 
 ### Fixed
