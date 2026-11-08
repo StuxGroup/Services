@@ -5,6 +5,14 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.08
+
+### Changed
+
+- The status band and Stux.Group Status card say "checked regularly" instead of "checked every 5 minutes":
+  GitHub runs the status checks' 5-minute schedule best-effort, often less often, and each status page now
+  shows the real check rhythm
+
 ## v26.11.07-1
 
 ### Added
