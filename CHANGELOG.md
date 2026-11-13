@@ -5,6 +5,13 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.13
+
+### Changed
+
+- The Imprint and README show Stux Group Ltd's new registered office, 124 City Road, London, EC1V 2NX,
+  England; the Imprint's effective date is 13 November 2026
+
 ## v26.11.08
 
 ### Changed
