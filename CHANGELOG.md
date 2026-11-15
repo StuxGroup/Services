@@ -5,6 +5,14 @@ v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`,
 date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
 
+## v26.11.15
+
+### Added
+
+- `dev-server.sh`/`.bat` (and `dev-server.js`) accept `--lan`: the dev server listens on `0.0.0.0` so phones and other
+  devices on the local network can open it, and prints the addresses to open (one per IPv4 address, minus
+  loopback). Without it, the server stays on `127.0.0.1` only
+
 ## v26.11.13-1
 
 ### Fixed
