@@ -132,6 +132,7 @@ Repository link.
 ```
 ./dev-server.sh          # http://127.0.0.1:8080, DEV_MODE forced on
 ./dev-server.sh 3000 --no-dev-mode
+./dev-server.sh --lan    # also open it from a phone on your network (prints the addresses)
 ```
 
 On Windows, use `dev-server.bat` instead. No `npm install` needed: the dev server is a single
