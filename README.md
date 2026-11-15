@@ -152,9 +152,9 @@ with `bash tests/run.sh` (Node's built-in test runner, nothing to install).
    commits, and tags it (`v26.10.23`)
 5. `git push origin test --tags`; the release workflow then publishes a GitHub Release from the
    matching `CHANGELOG.md` section
-6. Open a pull request from `test` into `main`; the site deploys when it's merged
+6. Open a pull request from `test` into `staging` (`gh pr create --base staging --head test`); once it's merged and checked, open one from `staging` into `main` (`gh pr create --base main --head staging`). The site deploys when that one is merged
 
-Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
+Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `staging`, and `staging` only through one from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## Versioning
 
@@ -162,7 +162,7 @@ Stux.Group Services uses [Date Versioning](https://datevers.ing): each release i
 UTC release date as `YY.MM.DD` (e.g. `26.10.23`), with `-1`, `-2`… for further releases that day.
 See [CHANGELOG.md](CHANGELOG.md) for what changed in each.
 
-Releases are committed and tagged on the `test` branch and go live when the pull request from `test` into `main` is merged; see [Branches](CONTRIBUTING.md#branches).
+Releases are committed and tagged on the `test` branch and go live through pull requests from `test` into `staging`, then from `staging` into `main`; see [Branches and going live](CONTRIBUTING.md#branches-and-going-live).
 
 ## License
 
